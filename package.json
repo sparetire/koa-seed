@@ -1,0 +1,33 @@
+{
+  "name": "koa-seed",
+  "version": "1.0.0",
+  "description": "A seed project for koa",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start process.json --env prod",
+    "stop": "pm2 stop process.json --only koa-seed",
+    "restart": "pm2 restart process.json --only koa-seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparetire/koa-seed.git"
+  },
+  "keywords": [
+    "koa",
+    "seed"
+  ],
+  "author": "Sparetire",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sparetire/koa-seed/issues"
+  },
+  "homepage": "https://github.com/sparetire/koa-seed#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.3.0",
+    "koa-multer": "0.0.2",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0"
+  }
+}
