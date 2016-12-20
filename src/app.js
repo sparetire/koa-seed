@@ -21,4 +21,12 @@ if (process.env.NODE_ENV === 'dev') {
 
 app.use(controller(router))
 	.use(router.allowedMethods());
+
+app.on('error', (err, ctx) => {
+	console.log('GLOBAL-ERROR:');
+	console.log(err);
+});
+
 app.listen(config.port);
+
+console.log(`App is running on port: ${config.port}`);
