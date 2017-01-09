@@ -37,7 +37,8 @@ module.exports = {
 		'comma-spacing': 'warn',
 		'radix': 'warn',
 		'no-console': 'off',
-		'no-debugger': 'off'
+		'no-debugger': 'off',
+		'no-extra-boolean-cast': 'off'
 	},
 	globals: {
 		console: false
